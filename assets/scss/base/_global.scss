@@ -1,0 +1,27 @@
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+button {
+  cursor: pointer;
+}
+.play {
+  transition: all 400ms;
+  z-index: 3;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background: rgb(255, 221, 169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(255, 221, 169, 0.7);
+    box-shadow: 0 0 0 40px rgb(255, 221, 169, 0.2);
+  }
+}

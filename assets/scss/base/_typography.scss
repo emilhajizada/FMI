@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&display=swap');
+@font-face {
+  font-family: CeraPro;
+  src: url(/assets/fonts/CeraProBlack.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/assets/fonts/CeraProBold.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/assets/fonts/CeraProMedium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/assets/fonts/CeraProLight.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: CeraPro;
+  src: url(/assets/fonts/CeraProLight.otf);
+  font-weight: 300;
+}
+* {
+  font-family: CeraPro;
+}
+button {
+  font-family: 'DM Sans', sans-serif;
+}
+.nav_brand {
+  p {
+    font-family: 'Inter';
+  }
+}

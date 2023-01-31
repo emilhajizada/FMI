@@ -1,0 +1,103 @@
+#info_center_hero {
+  margin-top: 100px;
+  .container {
+    padding: 80px 10px;
+    display: flex;
+    gap: 34px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info_center_hero__content_box {
+    .info_center_hero__content_box__header {
+      margin-bottom: 40px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -2px;
+      color: #12022f;
+    }
+    .info_center_hero__content_box_content {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.355556px;
+      color: #594d6d;
+    }
+  }
+  img {
+    border-radius: 24px;
+    object-fit: cover;
+  }
+}
+#video_list_section {
+  width: 100%;
+  padding-bottom: 80px;
+  .container {
+    h2 {
+      margin: 80px 0 40px 0;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -2px;
+      color: #12022f;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      li {
+        border: 1px solid #e7e5ea;
+        padding: 32px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+        transition: all 400ms;
+
+        & > div {
+          display: flex;
+          width: 100%;
+          height: max-content;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: -0.4px;
+            color: #594d6d;
+          }
+          & > img {
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            transition: all 400ms;
+          }
+        }
+        & > figure {
+          transition: all 400ms;
+          display: none;
+          position: relative;
+          width: 730px;
+          height: 410px;
+          justify-content: center;
+          align-items: center;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

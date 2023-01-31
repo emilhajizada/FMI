@@ -1,0 +1,124 @@
+#about_hero {
+  margin-top: 120px;
+  .container {
+    padding: 80px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .about_hero__content {
+    max-width: 445px;
+    .about_hero__content__header {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -2px;
+      color: #12022f;
+      margin-bottom: 58px;
+    }
+    .about_hero__content__content {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.355556px;
+      color: #594d6d;
+    }
+  }
+  .about_hero__video_box {
+    max-width: 540px;
+    .about_hero__video_box__header {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.4px;
+      color: #594d6d;
+      margin-bottom: 112px;
+    }
+    img {
+      width: 100%;
+      aspect-ratio: 54/40;
+    }
+  }
+}
+#about_content {
+  .container {
+    margin-bottom: 80px;
+  }
+  .about_content__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #12022f;
+    margin-bottom: 80px;
+  }
+  .about_content__box {
+    display: flex;
+    justify-content: space-between;
+    .about_content__box__item {
+      max-width: 350px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -0.355556px;
+      color: #594d6d;
+    }
+  }
+}
+#about_quote {
+  .container {
+    border: 2px solid #e7e5ea;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10px;
+    margin-bottom: 72px;
+    .about_quote__img {
+      width: 72px;
+      height: 72px;
+    }
+    .about_quote__header {
+      margin: 30px 0;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      text-align: center;
+      letter-spacing: -1.6px;
+      color: #12022f;
+      max-width: 750px;
+    }
+    .about_quote__avatar_img {
+      width: 65px;
+      height: 65px;
+    }
+    .about_quote__avatar_name {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: -0.4px;
+      color: #12022f;
+    }
+    .about_quote__avatar_job {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: -0.3px;
+      color: #594d6d;
+    }
+  }
+}
