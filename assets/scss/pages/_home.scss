@@ -103,6 +103,7 @@
   background: #140c6a;
   color: #fff;
   padding: 66px 0;
+  min-height: 550px;
   .container {
     flex-direction: column;
     justify-content: center;
@@ -204,6 +205,7 @@
     gap: 30px;
 
     .info_center_section_card_container_card {
+      cursor: pointer;
       width: 33%;
       img {
         border-radius: 24px;
@@ -234,6 +236,7 @@
   }
 }
 #xerenos_section {
+  cursor: pointer;
   background-image: url(../imgs/XerenosBG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,6 +286,7 @@
     justify-content: space-between;
   }
   .news_section__card {
+    cursor: pointer;
     border-radius: 32px;
     width: 33%;
     min-height: 665px;
@@ -335,6 +339,9 @@
 #reports_section {
   padding: 80px 0;
   background: #f8f8f8;
+  img{
+    cursor: pointer;
+  }
   .container {
     display: flex;
     justify-content: space-between;

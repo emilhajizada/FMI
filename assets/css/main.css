@@ -83,14 +83,17 @@ button {
 header {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 0px;
+  z-index: 5;
   padding: 14px 0;
   width: 100%;
   height: 120px;
   color: white;
+  transition: 300ms;
 }
 header.colored {
+  transition: 300ms;
   background: #12022F;
 }
 header .container {
@@ -105,8 +108,7 @@ header .nav_brand {
   height: 72px;
 }
 header .nav_brand img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 header .nav_brand p {
   width: 50%;
@@ -166,8 +168,7 @@ footer .content .content__brand a {
   align-items: flex-start;
 }
 footer .content .content__brand img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 50%;
 }
 footer .content .content__brand p {
@@ -326,6 +327,7 @@ footer .copyrights {
   background: #140c6a;
   color: #fff;
   padding: 66px 0;
+  min-height: 550px;
 }
 #testimonials_section .container {
   flex-direction: column;
@@ -427,6 +429,7 @@ footer .copyrights {
   gap: 30px;
 }
 #info_center_section .info_center_section_card_container .info_center_section_card_container_card {
+  cursor: pointer;
   width: 33%;
 }
 #info_center_section .info_center_section_card_container .info_center_section_card_container_card img {
@@ -456,6 +459,7 @@ footer .copyrights {
 }
 
 #xerenos_section {
+  cursor: pointer;
   background-image: url(../imgs/XerenosBG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -507,6 +511,7 @@ footer .copyrights {
   justify-content: space-between;
 }
 #news_section .news_section__card {
+  cursor: pointer;
   border-radius: 32px;
   width: 33%;
   min-height: 665px;
@@ -558,6 +563,9 @@ footer .copyrights {
 #reports_section {
   padding: 80px 0;
   background: #f8f8f8;
+}
+#reports_section img {
+  cursor: pointer;
 }
 #reports_section .container {
   display: flex;
@@ -677,6 +685,7 @@ footer .copyrights {
 }
 #about_hero .about_hero__video_box img {
   width: 100%;
+  cursor: pointer;
   aspect-ratio: 54/40;
 }
 
@@ -786,8 +795,7 @@ footer .copyrights {
 }
 #info_center_hero img {
   border-radius: 24px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #video_list_section {
@@ -821,8 +829,6 @@ footer .copyrights {
   cursor: pointer;
   display: flex;
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   justify-content: space-between;
   align-items: center;
@@ -842,8 +848,7 @@ footer .copyrights {
   cursor: pointer;
   width: 24px;
   height: 24px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   transition: all 400ms;
 }
 #video_list_section .container ul li > figure {
@@ -858,8 +863,7 @@ footer .copyrights {
 #video_list_section .container ul li > figure > img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 #video_list_section .container ul li > figure > div {
@@ -962,8 +966,6 @@ footer .copyrights {
   padding: 66px 0;
   margin-top: 120px;
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 #video_section .container {
@@ -983,8 +985,6 @@ footer .copyrights {
 }
 #video_section .container > div {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   position: relative;
   height: 411px;
@@ -997,10 +997,7 @@ footer .copyrights {
   height: 411px;
   width: 731px;
   position: absolute;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 #video_section .container > div > img:nth-child(1) {
   left: 0;
@@ -1025,8 +1022,6 @@ footer .copyrights {
 
 #cards_section {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 #cards_section .container {
@@ -1038,8 +1033,6 @@ footer .copyrights {
 }
 #cards_section .container ul {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   display: flex;
   justify-content: space-between;
@@ -1076,8 +1069,6 @@ footer .copyrights {
 
 #project_section {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
   margin: 80px 0;
   background: #f8f8f8;
@@ -1148,8 +1139,6 @@ footer .copyrights {
 
 #documents_section {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 #documents_section .container h2 {
