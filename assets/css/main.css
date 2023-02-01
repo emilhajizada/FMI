@@ -569,9 +569,6 @@ footer .copyrights {
   padding: 80px 0;
   background: #f8f8f8;
 }
-#reports_section img {
-  cursor: pointer;
-}
 #reports_section .container {
   display: flex;
   justify-content: space-between;
