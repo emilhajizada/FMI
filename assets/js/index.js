@@ -20,24 +20,24 @@ imgs.forEach((img, i) => {
   img.addEventListener("click", async () => {
     const item = document.querySelector("#testimonials_section .active");
     const item_parent = item.parentElement.parentElement.children[1];
-
+  
     item.classList.remove("active");
     img.classList.add("active");
     await setTimeout(() => {
       item_parent.classList.add("animate__fadeInUp");
-      item_parent.children[0].innerHTML = texts[i].text;
-      item_parent.children[1].innerHTML = texts[i].name;
-      item_parent.children[2].innerHTML = texts[i].job;
+        item_parent.children[0].innerHTML = texts[i].text;
+    item_parent.children[1].innerHTML = texts[i].name;
+    item_parent.children[2].innerHTML = texts[i].job;
     }, 100);
     item_parent.classList.remove("animate__fadeInUp");
   });
 });
 
+
 const header = document.querySelector("header");
 
-window.onscroll = () => {
+window.onscroll =()=>{
   console.log(window.scrollY);
-  window.scrollY > 0
-    ? header.classList.add("colored")
-    : header.classList.remove("colored");
-};
+  window.scrollY > 0 ? header.classList.add("colored") : header.classList.remove("colored")
+  
+}

@@ -37,10 +37,20 @@
       color: #594d6d;
       margin-bottom: 112px;
     }
-    img {
+    figure {
       width: 100%;
-      cursor: pointer;
       aspect-ratio: 54/40;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 32px;
+      & > img {
+        width: 100%;
+        border-radius: 32px;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

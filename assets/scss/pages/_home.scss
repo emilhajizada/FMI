@@ -236,7 +236,6 @@
   }
 }
 #xerenos_section {
-  cursor: pointer;
   background-image: url(../imgs/XerenosBG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,10 +245,6 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-  }
-  img {
-    width: 90px;
-    height: 90px;
   }
   div {
     color: white;
@@ -286,7 +281,6 @@
     justify-content: space-between;
   }
   .news_section__card {
-    cursor: pointer;
     border-radius: 32px;
     width: 33%;
     min-height: 665px;
@@ -295,11 +289,13 @@
     position: relative;
 
     img {
+    cursor: pointer;
       width: 100%;
       border-radius: 12px;
       margin-bottom: 32px;
     }
     .news_section__card__header {
+      cursor: pointer;
       margin-bottom: 24px;
       font-style: normal;
       font-weight: 700;
@@ -339,7 +335,7 @@
 #reports_section {
   padding: 80px 0;
   background: #f8f8f8;
-  img{
+  img {
     cursor: pointer;
   }
   .container {
@@ -356,6 +352,15 @@
       letter-spacing: -1.6px;
       color: #12022f;
       margin-bottom: 32px;
+    }
+    & > figure {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .play_w {
+        position: absolute;
+      }
     }
     .reports_section__content_box_content {
       margin-bottom: 32px;

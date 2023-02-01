@@ -6,6 +6,10 @@
 }
 button {
   cursor: pointer;
+  transition: all 300ms;
+  &:hover {
+    filter: brightness(85%);
+  }
 }
 .play {
   transition: all 400ms;
@@ -24,4 +28,8 @@ button {
     background: rgb(255, 221, 169, 0.7);
     box-shadow: 0 0 0 40px rgb(255, 221, 169, 0.2);
   }
+}
+.play_w {
+  position: static;
+  background: rgb(255, 255, 255, 0.3);
 }

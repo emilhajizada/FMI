@@ -60,6 +60,10 @@ button {
 
 button {
   cursor: pointer;
+  transition: all 300ms;
+}
+button:hover {
+  filter: brightness(85%);
 }
 
 .play {
@@ -78,6 +82,11 @@ button {
 .play:hover {
   background: rgba(255, 221, 169, 0.7);
   box-shadow: 0 0 0 40px rgba(255, 221, 169, 0.2);
+}
+
+.play_w {
+  position: static;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 header {
@@ -459,7 +468,6 @@ footer .copyrights {
 }
 
 #xerenos_section {
-  cursor: pointer;
   background-image: url(../imgs/XerenosBG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -470,10 +478,6 @@ footer .copyrights {
   justify-content: center;
   align-items: center;
   gap: 40px;
-}
-#xerenos_section img {
-  width: 90px;
-  height: 90px;
 }
 #xerenos_section div {
   color: white;
@@ -511,7 +515,6 @@ footer .copyrights {
   justify-content: space-between;
 }
 #news_section .news_section__card {
-  cursor: pointer;
   border-radius: 32px;
   width: 33%;
   min-height: 665px;
@@ -520,11 +523,13 @@ footer .copyrights {
   position: relative;
 }
 #news_section .news_section__card img {
+  cursor: pointer;
   width: 100%;
   border-radius: 12px;
   margin-bottom: 32px;
 }
 #news_section .news_section__card .news_section__card__header {
+  cursor: pointer;
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 700;
@@ -582,6 +587,15 @@ footer .copyrights {
   letter-spacing: -1.6px;
   color: #12022f;
   margin-bottom: 32px;
+}
+#reports_section .container > figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#reports_section .container > figure .play_w {
+  position: absolute;
 }
 #reports_section .container .reports_section__content_box_content {
   margin-bottom: 32px;
@@ -683,10 +697,20 @@ footer .copyrights {
   color: #594d6d;
   margin-bottom: 112px;
 }
-#about_hero .about_hero__video_box img {
+#about_hero .about_hero__video_box figure {
   width: 100%;
-  cursor: pointer;
   aspect-ratio: 54/40;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+}
+#about_hero .about_hero__video_box figure > img {
+  width: 100%;
+  border-radius: 32px;
+  height: 100%;
+  object-fit: cover;
 }
 
 #about_content .container {
@@ -919,9 +943,23 @@ footer .copyrights {
   display: flex;
   gap: 24px;
 }
-#otcet_hero .otcet_hero__cardbox .otcet_hero__cardbox__card img {
-  width: 125px;
+#otcet_hero .otcet_hero__cardbox .otcet_hero__cardbox__card > figure {
+  min-width: 125px;
   height: 90px;
+  border-radius: 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#otcet_hero .otcet_hero__cardbox .otcet_hero__cardbox__card > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#otcet_hero .otcet_hero__cardbox .otcet_hero__cardbox__card > figure .play_w {
+  position: absolute;
+  transform: scale(0.5);
 }
 #otcet_hero .otcet_hero__cardbox .otcet_hero__cardbox__card div {
   font-style: normal;
