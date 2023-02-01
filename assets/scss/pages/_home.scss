@@ -20,7 +20,7 @@
 }
 #about_section {
   padding: 32px 0;
-  .container{
+  .container {
     display: flex;
     justify-content: space-between;
     gap: 8%;
@@ -109,18 +109,6 @@
     align-items: center;
   }
   .testimonials_section_img_container {
-    img{
-      height: 65px;
-      width: 65px;
-      border-radius: 50%;
-      transition: 300ms;
-      cursor: pointer;
-      &.active{
-        transition: 300ms;
-        height: 95px;
-        width: 95px;
-      }
-    }
     margin: 0 auto;
     margin-bottom: 56px;
     height: 95px;
@@ -128,6 +116,20 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+    img {
+      height: 65px;
+      width: 65px;
+      border-radius: 50%;
+      transition: 300ms;
+      cursor: pointer;
+      opacity: 0.2;
+      &.active {
+        opacity: 1;
+        transition: 300ms;
+        height: 95px;
+        width: 95px;
+      }
+    }
   }
   .testimonials_section_content_container {
     max-width: 730px;
@@ -174,7 +176,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .info_center_section_header {
     margin: 0 auto;
     font-weight: 700;
@@ -200,7 +202,7 @@
   .info_center_section_card_container {
     display: flex;
     gap: 30px;
-    
+
     .info_center_section_card_container_card {
       width: 33%;
       img {
@@ -236,18 +238,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0px;
-  .container{
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    
   }
   img {
     width: 90px;
     height: 90px;
   }
-  div{
+  div {
     color: white;
     font-style: normal;
     font-weight: 700;
@@ -264,17 +265,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  .news_section_header{
+  .news_section_header {
     font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 4px;
-text-transform: uppercase;
-color: #12022F;
-mix-blend-mode: normal;
-opacity: 0.5;
-margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #12022f;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 50px;
   }
   .news_section__cardbox {
     gap: 30px;
@@ -391,13 +392,13 @@ margin-bottom: 50px;
 }
 #partners_section {
   padding: 46px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  hr{
+  hr {
     opacity: 0.1;
     width: 100%;
   }

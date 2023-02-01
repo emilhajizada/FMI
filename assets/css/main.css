@@ -347,8 +347,10 @@ footer .copyrights {
   border-radius: 50%;
   transition: 300ms;
   cursor: pointer;
+  opacity: 0.2;
 }
 #testimonials_section .testimonials_section_img_container img.active {
+  opacity: 1;
   transition: 300ms;
   height: 95px;
   width: 95px;
@@ -494,7 +496,7 @@ footer .copyrights {
   line-height: 24px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #12022F;
+  color: #12022f;
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-bottom: 50px;
@@ -614,7 +616,7 @@ footer .copyrights {
 
 #partners_section {
   padding: 46px 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 #partners_section .container {
   display: flex;
@@ -808,15 +810,15 @@ footer .copyrights {
 }
 #video_list_section .container ul li {
   border: 1px solid #e7e5ea;
-  padding: 32px;
+  padding: 32px 32px 0 32px;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 44px;
-  transition: all 400ms;
 }
 #video_list_section .container ul li > div {
+  padding: 16px;
+  cursor: pointer;
   display: flex;
   width: 100%;
   height: -webkit-max-content;
@@ -824,6 +826,7 @@ footer .copyrights {
   height: max-content;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 }
 #video_list_section .container ul li > div p {
   display: flex;
@@ -845,10 +848,10 @@ footer .copyrights {
 }
 #video_list_section .container ul li > figure {
   transition: all 400ms;
-  display: none;
+  display: flex;
   position: relative;
   width: 730px;
-  height: 410px;
+  height: 0;
   justify-content: center;
   align-items: center;
 }
@@ -858,6 +861,9 @@ footer .copyrights {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+#video_list_section .container ul li > figure > div {
+  display: none;
 }
 
 #otcet_hero {

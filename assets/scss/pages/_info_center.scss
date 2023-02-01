@@ -50,20 +50,21 @@
       gap: 23px;
       li {
         border: 1px solid #e7e5ea;
-        padding: 32px;
+        padding: 32px 32px 0 32px;
         border-radius: 32px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 44px;
-        transition: all 400ms;
 
         & > div {
+          padding: 16px;
+          cursor: pointer;
           display: flex;
           width: 100%;
           height: max-content;
           justify-content: space-between;
           align-items: center;
+          margin-bottom: 32px;
           p {
             display: flex;
             align-items: center;
@@ -84,10 +85,10 @@
         }
         & > figure {
           transition: all 400ms;
-          display: none;
+          display: flex;
           position: relative;
           width: 730px;
-          height: 410px;
+          height: 0;
           justify-content: center;
           align-items: center;
           & > img {
@@ -95,6 +96,9 @@
             height: 100%;
             object-fit: cover;
             display: block;
+          }
+          & > div {
+            display: none;
           }
         }
       }
