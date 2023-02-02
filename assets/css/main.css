@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+
 ul, ol, a {
   list-style-type: none;
   text-decoration: none;
@@ -154,6 +159,46 @@ header nav img {
   cursor: pointer;
 }
 
+#go_top_btn {
+  position: fixed;
+  right: 25px;
+  bottom: 40px;
+  border-radius: 50%;
+  background: rgb(255, 221, 169);
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition: 500ms;
+}
+#go_top_btn svg {
+  height: 20px;
+  width: 20px;
+  animation-name: up_and_down;
+  animation-iteration-count: infinite;
+}
+#go_top_btn:hover {
+  background: rgba(250, 206, 140, 0.9);
+  transition: 500ms;
+  transform: scale(1.2);
+}
+#go_top_btn:hover svg {
+  animation-duration: 700ms;
+}
+
+@keyframes up_and_down {
+  0% {
+    transform: translateY(3px);
+  }
+  66% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
 footer {
   background: #12022f;
   color: #ffffff;
